@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+    <title>resume builder</title>
+  </head>
+  <body>
+    <div class="dat">
+   
+      <h1>resume builder</h1>
+      <label for="nm">name</label>
+      <input type="text" name="nm" id="nm" /><br />
+      <label for="phone">phone</label>
+      <input type="tel" name="phone" id="phone" /><br />
+      <label for="mail">mail id</label>
+      <input type="email" name="mail" id="mail" /><br />
+      <label for="education">education</label>
+      <input type="text" name="education" id="education" /><br />
+      <label for="skill">skill</label>
+      <textarea name="skill" id=skill rows="5" cols="40"></textarea>
+      <label for="language">language</label>
+      <textarea name="language" id=language rows="5" cols="40"></textarea>
+      <button type="submit" onclick="display()">login</button>
+      </div>
+      
+ <div class="res">
+        <h1 id="hed"></h1>
+        <p id="pn"></p>
+        <p id="ph"></p>
+        <p id="pm"></p>
+        <p id="pe"></p>
+        <p id="ps1"></p>
+        <p id="ps"></p>
+        <p id="pl1"></p>
+        <p id="pl"></p>
+      </div>
+  
+      <script src="script.js"></script>
+  </body>
+</html>
+
+css
+
+
+
+#ps,#pl {
+ 
+  margin-left: 20%;
+}
+#nm{
+  margin-left: 9%;
+}
+#phone{
+  margin-left: 8%;
+}
+#mail {
+  margin-left: 6.6%;
+}
+button{
+  margin-left: 10%;
+  width: 80%;
+  background-color: green;
+}
+text{
+  margin-left: 20%;
+}
+
+
+
+
+js
+
+function display()
+{
+ var a=document.getElementById("nm").value
+  var b=document.getElementById("phone").value
+  var c=document.getElementById("mail").value
+  var d=document.getElementById("education").value
+  var e=document.getElementById("language").value;
+  var f=document.getElementById("skill").value
+            document.getElementById("hed").innerText="resume";
+            
+            document.getElementById("pn").innerText= "name       : "+a;
+
+            document.getElementById("pm").innerText = "Email     : "   +c;
+            document.getElementById("ph").innerText = "Phone     : " + b;
+            document.getElementById("pe").innerText = "Education : " + d;
+            document.getElementById("pl1").innerText="language   :" ;
+            document.getElementById("pl").innerText =  e;
+            document.getElementById("ps1").innerText="skill      :";
+            document.getElementById("ps").innerText=  f;
+            
+  
+}
+
