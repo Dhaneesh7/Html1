@@ -1,0 +1,22 @@
+Css
+#ps,#pl {
+ 
+  margin-left: 20%;
+}
+#nm{
+  margin-left: 9%;
+}
+#phone{
+  margin-left: 8%;
+}
+#mail {
+  margin-left: 6.6%;
+}
+button{
+  margin-left: 10%;
+  width: 80%;
+  background-color: green;
+}
+text{
+  margin-left: 20%;
+}
