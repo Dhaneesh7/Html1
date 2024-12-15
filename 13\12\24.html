@@ -12,6 +12,11 @@
       var place="Robin Singh from USA"
       var Str="js string exercises"
       str1 =Str.split(" ")
+     function up(){
+      for(i of str1)
+      {
+       document.writeln( i.charAt(0).toUpperCase()+i.slice(1))
+      }}
       swap="AaBbCc"
    rp="Ha!"
    ex="We are doing some exercises."
@@ -21,10 +26,13 @@ document.writeln("</br>2 "+name.slice(0,4))
 document.writeln("</br>3 "+email1[0]+"..."+email2[1])
 document.writeln("</br>4 "+place.replaceAll(" ","_"))
 document.writeln("</br>5 "+Str.charAt(0).toUpperCase()+Str.slice(1))
-document.writeln("</br>6 "+str1[0].charAt(0).toUpperCase())
+document.writeln("</br>6 ")
+up();
 document.writeln("</br>7 "+swap.toUpperCase())
-document.writeln("</br>8 "+repeat())
-document.writeln("</br>9 "+insert(ex,3))
+document.writeln("</br>8 ")
+repeat();
+document.writeln("</br>9 ")
+insert(ex,4);
   
 function repeat()
    {
@@ -32,13 +40,14 @@ function repeat()
      for(i=0;i<n;i++)
      {
        document.writeln("ha!")
+       console.log("hi")
      }
      
    }
    function insert(a,b){
      for(i=0;i<b;i++)
      {
-       document.writeln("</br>"+a)
+       document.writeln(a+"</br>")
      }
    }
     </script>
