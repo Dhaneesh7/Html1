@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+      <script>
+      var email="robin_singh@example.com"
+     var email1=email.split("_")
+     var email2=email.split("@")
+      var name="Robin Singh"
+      var place="Robin Singh from USA"
+      var Str="js string exercises"
+      str1 =Str.split(" ")
+      swap="AaBbCc"
+   rp="Ha!"
+   ex="We are doing some exercises."
+   
+document.writeln("1 "+name.split(" "));
+document.writeln("</br>2 "+name.slice(0,4))
+document.writeln("</br>3 "+email1[0]+"..."+email2[1])
+document.writeln("</br>4 "+place.replaceAll(" ","_"))
+document.writeln("</br>5 "+Str.charAt(0).toUpperCase()+Str.slice(1))
+document.writeln("</br>6 "+str1[0].charAt(0).toUpperCase())
+document.writeln("</br>7 "+swap.toUpperCase())
+document.writeln("</br>8 "+repeat())
+document.writeln("</br>9 "+insert(ex,3))
+  
+function repeat()
+   {
+     n=3
+     for(i=0;i<n;i++)
+     {
+       document.writeln("ha!")
+     }
+     
+   }
+   function insert(a,b){
+     for(i=0;i<b;i++)
+     {
+       document.writeln("</br>"+a)
+     }
+   }
+    </script>
+  </body>
+  
+</html>
