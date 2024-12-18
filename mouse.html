@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #coordinates {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Tracker</h1>
+    <p>Move your mouse around and see the coordinates!</p>
+    <div id="coordinates">X: 0, Y: 0</div>
+
+    <script>
+        // Get the coordinates display element
+        const coordinatesElement = document.getElementById('coordinates');
+
+        // Add an event listener for mouse movement
+        document.addEventListener('mousemove', (event) => {
+            // Get the mouse coordinates
+            const x = event.clientX;
+            const y = event.clientY;
+
+            // Update the coordinates display
+            coordinatesElement.textContent = `X: ${x}, Y: ${y}`;
+        });
+    </script>
+</body>
+</html>
