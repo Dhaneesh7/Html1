@@ -1,0 +1,47 @@
+<html>    
+    <head>
+        <title>Shape Areas</title>
+    </head>
+    <body>
+        <script>
+            class Shape {
+                constructor() {
+                }
+
+                area() {
+                }
+            }
+
+            class Triangle extends Shape {
+                constructor(b, h) {
+                    super(); 
+                    this.b = b;
+                    this.h = h;
+                }
+
+                area() {
+                    this.areas = 0.5 * this.b * this.h;
+                    document.write("Triangle area: " + this.areas + "<br>");
+                }
+            }
+
+            class Circle extends Shape {
+                constructor(r) {
+                    super(); 
+                    this.m = r;
+                }
+
+                area() {
+                    this.areas = 3.14 * this.m * this.m;
+                    console.log("Circle area: " + this.areas);
+                }
+            }
+
+            const circleObj = new Circle(6);
+            const triangleObj = new Triangle(5, 6);
+
+            circleObj.area();
+            triangleObj.area();
+        </script>
+    </body>
+</html>
